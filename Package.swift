@@ -4,6 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "AppsShowcase",
+    defaultLocalization: "en",
     platforms: [
         .iOS(.v13),
         .macOS(.v12),
@@ -15,6 +16,10 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "AppsShowcase"),
+            name: "AppsShowcase",
+            resources: [
+                .process("Resources"),
+            ]
+        ),
     ]
 )
