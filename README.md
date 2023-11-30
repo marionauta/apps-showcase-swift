@@ -5,7 +5,7 @@ showcase inside your app. Useful for cross promoting apps by the same developer.
 
 ## Install
 
-Add `https://github.com/marionauta/apps-showcase-list` to your Swift Package
+Add `https://github.com/marionauta/apps-showcase-swift` to your Swift Package
 Manager dependencies. Other dependency managers are not supported.
 
 ## How to use it
