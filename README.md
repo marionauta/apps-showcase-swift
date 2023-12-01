@@ -55,7 +55,7 @@ You can display the `ShowcasedApp` object however you want. Two basic views
 ```swift
 import SwiftUI
 
-@available(iOS 15.0, *)
+@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 struct AppList: View {
     let apps: [ShowcasedApp]
 
