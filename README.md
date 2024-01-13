@@ -71,3 +71,24 @@ struct AppList: View {
     }
 }
 ```
+
+## Out of the box
+
+An additional `ShowcasedAppsSection` view is provided, that takes care of
+fetching and displaying the app list:
+
+```swift
+import SwiftUI
+
+@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+struct AppList: View {
+    @State private var isLoading: Bool = false
+
+    var body: some View {
+        // Simple
+        ShowcasedAppsSection("My other apps", url: URL(string: "...")!)
+        // To report the loading status:
+        ShowcasedAppsSection("My other apps", url: URL(string: "...")!, isLoading: $isLoading)
+    }
+}
+```
